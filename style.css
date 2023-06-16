@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "B Yekan", serif;
+
+
+}
+.container::before{
+  content: "";
+  width: 100px;
+  height: 20px;
+  display: inline;
+  position: absolute;
+  background-color: cyan;
+  z-index: 100;
+  top: 27px;
+  right: 200px;
+}
+
+.container{
+  margin-top: 20px;
+  margin-left:25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 953px;
+  height: 258px;
+  background-color: #E73C50;
+  padding: 5px;
+  border-radius: 15px;
+
+}
+.products-info{
+  width: 154px;
+  height: 219px;
+  padding: 2px;
+  background-color: white;
+}
+.products-info:nth-child(5){
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.products-info:nth-child(1){
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.product-info-price-newTxt{
+  display: inline-block;
+  font-size: 0.85rem;
+}
+.product-info-price-oldTxt{
+  font-size: 0.8rem;
+  color: grey;
+}
+.product-info-price-discount{
+  display:inline-block;
+  font-size: 0.7rem;
+  font-weight: lighter;
+
+
+}
+.products-info strong{
+  color: white;
+  background-color: #E73C50;
+  border-radius: 10px;
+  padding: 1px 4px;
+}
+.products-info img {
+  margin-left: 10px;
+  width: 130px;
+  height: 130px;
+}
+.amazing{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.amazing img{
+  width: 145px;
+  height: 115px;
+
+}
+.amazing{
+  width: 145px;
+  height: 234px;
+  border-width: 2px;
+
+}
+.amazing-txt {
+
+  color: white;
+  align-self: center;
+}
+.amazing-showAll{
+  align-self: center;
+  cursor: pointer;
+}
+.amazing-showAll a {
+  color: white;
+  margin: 3px;
+}
+a{
+  color:black;
+}
+@media (max-width :500px){
+  .container{
+    flex-direction: column;
+    width:352px;!important
+  }
+}
+
